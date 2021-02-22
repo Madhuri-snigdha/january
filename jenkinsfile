@@ -1,0 +1,8 @@
+node{
+  stage('SCM Checkout') {
+    git 'https://github.com/Madhuri-snigdha/january'
+    }
+   stage('compile-package'){
+     sh'mvn package'
+     }
+    }
